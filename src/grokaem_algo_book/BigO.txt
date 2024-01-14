@@ -1,0 +1,5 @@
+O(logn) - logarithm time - example: binary search
+O(n) - linear time - example: simple search one by one
+O(n * logn) - effective way of sorting - example: quick sort
+O(n^2) - slow sort algorithm - example: bubble sort
+O(n!) - very slow sort algorithms - example: 'commis voyageur' task

@@ -7,7 +7,31 @@ import java.util.Objects;
 @SuppressWarnings("DuplicatedCode")
 public class BinarySearch {
 
-    private static int binarySearch(List<Integer> list, Integer guessedNum) {
+    public int search(List<String> stringList, String target) {
+
+        int low = 0;
+        int high = stringList.size() - 1;
+
+        while (low <= high) {
+
+            int mid = low + (high - low) / 2;
+            int comparison = target.compareTo(stringList.get(mid));
+
+            if (comparison == 0) {
+                return mid; // Target found
+            } else if (comparison < 0) {
+                high = mid - 1; // Target lies in the first half
+            } else {
+                low = mid + 1; // Target lies in the second half
+            }
+
+        }
+
+        throw new RuntimeException("etF8swSo :: guessed string does not exists in the list ");
+
+    }
+
+    public int search(List<Integer> list, Integer guessedNum) {
 
         int low = 0;
         int high = list.size(); // 1000
@@ -38,7 +62,7 @@ public class BinarySearch {
 
     }
 
-    private static int binarySearch(List<Integer> list, Integer guessedNum, int low, int high) {
+    public int search(List<Integer> list, Integer guessedNum, int low, int high) {
 
         if (guessedNum > list.size()) {
             throw new RuntimeException("vD8DwWe0 :: guessed number does not exists in the list ");
@@ -58,7 +82,7 @@ public class BinarySearch {
             low = mid + 1;
         }
 
-        return binarySearch(list, guessedNum, low, high);
+        return search(list, guessedNum, low, high);
 
     }
 
@@ -72,11 +96,13 @@ public class BinarySearch {
 
         Integer guessedNum = 967;
 
-        int index = binarySearch(list, guessedNum);
+        BinarySearch binarySearch = new BinarySearch();
+
+        int index = binarySearch.search(list, guessedNum);
 
         System.out.println("2Cl9KU29 :: index = " + index);
 
-        int index2 = binarySearch(list, guessedNum, 0, list.size());
+        int index2 = binarySearch.search(list, guessedNum, 0, list.size());
 
         System.out.println("C9QTElNi :: index 2 = " + index2);
 
