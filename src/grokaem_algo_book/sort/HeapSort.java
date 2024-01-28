@@ -1,4 +1,4 @@
-package grokaem_algo_book;
+package grokaem_algo_book.sort;
 
 import java.util.Arrays;
 
