@@ -1,4 +1,4 @@
-package grokaem_algo_book.graph;
+package grokaem_algo_book.graph.bfs;
 
 public class Edge {
     public int km;

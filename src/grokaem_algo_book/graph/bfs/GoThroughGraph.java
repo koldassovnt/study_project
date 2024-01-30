@@ -1,4 +1,4 @@
-package grokaem_algo_book.graph;
+package grokaem_algo_book.graph.bfs;
 
 import java.util.ArrayList;
 import java.util.List;
