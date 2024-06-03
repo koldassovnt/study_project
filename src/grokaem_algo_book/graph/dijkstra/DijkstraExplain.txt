@@ -1,0 +1,12 @@
+We need 3 tables:
+    * Graph
+    * Costs
+    * Parents
+
+4 steps to solve:
+    1 - find entry with minimal value
+    2 - update cost of neighbor entries
+    3 - repeat till it will not be done for all entry
+    4 - calculate final path
+
+Dijkstra algorithm works no - directed acyclic graph (DAG)
