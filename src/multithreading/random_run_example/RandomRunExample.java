@@ -12,4 +12,9 @@ public class RandomRunExample extends Thread {
             randomRunExample.start();
         }
     }
+
+    public static void main(String[] args) {
+        RandomRunExample.example();
+    }
+
 }
